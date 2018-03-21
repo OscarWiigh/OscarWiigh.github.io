@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Our Map</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<div id="main" onClick="hideStart()">
+	<div id="map"></div>
+	<div id="buttons">
+		<button id="add" onClick="addNewMarker()">Add Marker</button>
+		<button id="sat" onClick="mapSat()">Satellite</button>
+		<button id="road" onClick="mapRoad()">Roadmap</button>
+		<button id="plus" onClick="Zoomplus()">+</button>
+		<button id="minus" onClick="Zoomminus()">-</button>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLT8siLp_CgtmtkV4D0tsAGmIc6Ln9aN4&callback=initMap" async defer></script>
+</body>
+
+</html>
