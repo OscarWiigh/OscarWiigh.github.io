@@ -20,6 +20,18 @@ function mapSat() {
 	map.setMapTypeId('satellite');
 }
 
+function centerOpen() {
+	map.setCenter(marker3.position);;
+}
+
+function centerBiblo() {
+	map.setCenter(marker2.position);;
+}
+
+function centerStads() {
+	map.setCenter(marker1.position);;
+}
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: { lat: 59.3272911, lng: 18.0543577 },
@@ -63,7 +75,7 @@ function initMap() {
 			map: map,
 			draggable: true,
 			animation: google.maps.Animation.DROP,
-			position: { lat: 59.3478927, lng: 18.0706823}
+			position: { lat: 59.3478927, lng: 18.072917}
 			});
 			marker2.addListener('click', function() {
 			infowindow2.open(map, marker2);
@@ -77,7 +89,7 @@ function initMap() {
 				map: map,
 				draggable: true,
 				animation: google.maps.Animation.DROP,
-				position: { lat: 59.3473129, lng: 18.0717123}
+				position: { lat: 59.346453, lng: 18.072463}
 				});
 				marker3.addListener('click', function() {
 				infowindow3.open(map, marker3);
