@@ -41,7 +41,7 @@ function initMap() {
 	}
 
 	var infowindow = new google.maps.InfoWindow({
-		content: "<strong>Martins favoritplat</strong><p>Stadshuset</p>"
+		content: "<strong>Martins favoritplats</strong><p>Stadshuset</p>"
 	  });
 
 	markerstart = new google.maps.Marker({
