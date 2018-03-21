@@ -73,9 +73,9 @@ function addNewMarker(){
 		map: map,
 		draggable: true,
 		animation: google.maps.Animation.DROP,
-		position: map.getLocation()
+		position: map.getCenter()
 	  });
-	  map.setCenter(map.getLocation());
+	  map.setCenter(map.getCenter());
 	  marker.addListener('click', function() {
 		infowindow.open(map, marker);
 	  });
