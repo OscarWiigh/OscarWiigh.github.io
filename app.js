@@ -75,7 +75,7 @@ function addNewMarker(){
 		animation: google.maps.Animation.DROP,
 		position: map.getLocation()
 	  });
-	  map.setCenter({ lat: 59.3498092, lng: 18.0684758 });
+	  map.setCenter(map.getLocation());
 	  marker.addListener('click', function() {
 		infowindow.open(map, marker);
 	  });
