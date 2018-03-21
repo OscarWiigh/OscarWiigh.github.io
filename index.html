@@ -15,11 +15,14 @@
 	<div id="main">
 	<div id="map"></div>
 	<div id="buttons">
-		<button id="add" onClick="addNewMarker()">Add Marker</button>
-		<button id="sat" onClick="mapSat()">Satellite</button>
-		<button id="road" onClick="mapRoad()">Roadmap</button>
-		<button id="plus" onClick="Zoomplus()">+</button>
-		<button id="minus" onClick="Zoomminus()">-</button>
+		<button id="add" class="mapbuttons" onClick="addNewMarker()">Add Marker</button>
+		<button id="sat" class="mapbuttons" onClick="mapSat()">Satellite</button>
+		<button id="road" class="mapbuttons" onClick="mapRoad()">Roadmap</button>
+		<button id="plus" class="mapbuttons" onClick="Zoomplus()">+</button>
+		<button id="minus" class="mapbuttons" onClick="Zoomminus()">-</button>
+		<button id="stadshuset" class="mapbuttons" onClick="addNewMarker()">Stadshuset</button>
+		<button id="open" class="mapbuttons" onClick="mapSat()">Open</button>
+		<button id="biblo" class="mapbuttons" onClick="mapRoad()">Bibliotek</button>
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -26,7 +26,7 @@
 	padding: 0;
   }
 
-  #plus {
+  .mapbuttons {
     background-color: #555555;
     border: none;
     color: white;
@@ -37,64 +37,4 @@
     font-size: 12px;
     margin: 2px 2px;
     cursor: pointer;
-}
-
-#add {
-    background-color: #555555;
-    border: none;
-    color: white;
-    padding: 10px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
-}
-
-#plus:hover{
-	cursor: pointer;
-}
-
-#minus {
-    background-color: #555555;
-    border: none;
-    color: white;
-    padding: 10px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
-}
-
-#minus:hover{
-	cursor: pointer;
-}
-
-#sat {
-    background-color: #555555;
-    border: none;
-    color: white;
-    padding: 10px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
-}
-
-#road {
-    background-color: #555555;
-    border: none;
-    color: white;
-    padding: 10px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 2px 2px;
-    cursor: pointer;
-}
+  }
