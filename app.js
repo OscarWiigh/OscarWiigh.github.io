@@ -55,16 +55,8 @@ function initMap() {
 	  });
 	}
 
-function toggleBounce() {
-	if (marker.getAnimation() !== null) {
-	  marker.setAnimation(null);
-	} else {
-	  marker.setAnimation(google.maps.Animation.BOUNCE);
-	}
-  }
-
 function addNewMarker(){
-	var markerinfo = prompt("Add a description of the Marker!");
+	var markerinfo = prompt("Add a description of the Marker Please!");
 	var infowindow = new google.maps.InfoWindow({
 		content: markerinfo
 	  });
