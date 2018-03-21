@@ -1,6 +1,6 @@
 var map;
 var mapType = 'roadmap';
-startzoom = 18;
+var startzoom = 18;
 
 function Zoomplus() {
 	map.setZoom(map.getZoom()+1);
@@ -24,8 +24,6 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: { lat: 59.3272911, lng: 18.0543577 },
 		zoom: startzoom,
-		//center: {lat: 59.3498092, lng: 18.0684758},
-		//zoom: 19,
 		mapTypeId: mapType,
 		disableDefaultUI: true
 	});
@@ -39,20 +37,51 @@ function initMap() {
 		  map.setCenter(pos);
 		});
 	}
+	else {
+		map.setCenter({lat: 59.3272911, lng: 18.0543577});
+	}
 
-	var infowindow = new google.maps.InfoWindow({
+	var infowindow1 = new google.maps.InfoWindow({
 		content: "<strong>Martins favoritplats</strong><p>Stadshuset</p>"
 	  });
 
-	markerstart = new google.maps.Marker({
+	marker1 = new google.maps.Marker({
 		map: map,
 		draggable: true,
 		animation: google.maps.Animation.DROP,
-		position: { lat: 59.3272911, lng: 18.0543577 }
+		position: {lat: 59.3272911, lng: 18.0543577}
 	  });
-	  markerstart.addListener('click', function() {
-		infowindow.open(map, markerstart);
-	  });
+	  marker1.addListener('click', function() {
+		infowindow1.open(map, marker1);
+		});
+		
+		var infowindow2 = new google.maps.InfoWindow({
+			content: "<a href='https://www.kth.se/en/kthb'><strong>KTH Biblioteket</strong></a>"
+			});
+	
+		marker2 = new google.maps.Marker({
+			map: map,
+			draggable: true,
+			animation: google.maps.Animation.DROP,
+			position: { lat: 59.3478927, lng: 18.0706823}
+			});
+			marker2.addListener('click', function() {
+			infowindow2.open(map, marker2);
+			});
+
+			var infowindow3 = new google.maps.InfoWindow({
+				content: "<a href='http://www.openlabsthlm.se/open-cafe/' target='_blank'><strong>Café Open</strong></a>"
+				});
+		
+			marker3 = new google.maps.Marker({
+				map: map,
+				draggable: true,
+				animation: google.maps.Animation.DROP,
+				position: { lat: 59.3473129, lng: 18.0717123}
+				});
+				marker3.addListener('click', function() {
+				infowindow3.open(map, marker3);
+				});
 	}
 
 function addNewMarker(){
@@ -72,8 +101,4 @@ function addNewMarker(){
 		infowindow.open(map, marker);
 	  });
 }
-
-  function hideStart() {
-	$("#main").css({"-webkit-filter:": "", "-moz-filter": "", "-o-filter":"", "-ms-filter":"", "filter": ""});
-  }
 
