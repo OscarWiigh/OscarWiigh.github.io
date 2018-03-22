@@ -97,7 +97,7 @@ function initMap() {
 	}
 
 function addNewMarker(){
-	var markerinfo = prompt("Add a description of the Marker Please!");
+	var markerinfo = prompt("Description of the marker:");
 	var infowindow = new google.maps.InfoWindow({
 		content: markerinfo
 	  });
